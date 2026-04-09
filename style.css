@@ -5,21 +5,62 @@ html {
     --light-blue:#3882F6;
     --text-light:#F9FAF8;
     --light-grey: #E5E7EB;
+    --border-radius: 12px;
+
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
 }
 
 body{
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
 
-header {
-    background-color: var(--dark-bg);
-    display: flex;
-    justify-content: space-between;
-}
 main {
-    flex:1;
+    flex: 1;
 }
 
+header, footer, .hero {
+    background-color: var(--dark-bg);
+}
 
+section {
+    padding: 18px 48px;
+}
+.container {
+    display:flex;
+    margin: 0 auto;
+    flex-flow: row wrap;
+    align-items: center;
+}
 
+#quotes {
+    display: block;
+    background-color: var(--light-grey);
+}
+
+.quote {
+    font-size:36px;
+    font-weight: 300;
+    color: var(--dark-bg)
+}
+.quoted {
+    text-align: right;
+}
+.container-cta {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--light-blue);
+    margin: 0 auto;
+    gap: 2rem;
+    border-radius: var(--border-radius);
+}
+
+footer p{
+    text-align: center;
+    color: var(--light-grey);
+}
